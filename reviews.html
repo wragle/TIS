@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
-<div class="main">
+    <div class="main">
 <style type="text/css">div.background {
 }
-
 div.transbox {
   margin: 30px;
   background-color: #ffffff;
@@ -11,7 +10,6 @@ div.transbox {
   opacity: 0.6;
   filter: alpha(opacity=60); /* For IE8 and earlier */
 }
-
 div.transbox p {
   margin: 5%;
   font-weight: bold;
@@ -39,7 +37,6 @@ background-color: #E0F9FC
 body {
     font-family: "Lato", sans-serif;
 }
-
 .sidenav {
     height: 100%;
     width: 160px;
@@ -51,7 +48,6 @@ body {
     overflow-x: hidden;
     padding-top: 20px;
 }
-
 .sidenav a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
@@ -59,17 +55,14 @@ body {
     color: darkblue;
     display: block;
 }
-
 .sidenav a:hover {
     color: #E0F9FC;
 }
-
 .main {
     margin-left: 160px;
     font-size: 28px;
     padding: 0px 10px;
 }
-
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
@@ -92,21 +85,79 @@ height:100vh;
   
   }
 article * {grid-column: 2/3;}
-
   
   
   
   
   
   </style>
-  <article>
-    <center><p><u>Pan's Bake Shop</u></p></center>
-    <p>Pan's bakeshop. We tasted chocolate, vanilla and mint choc chip. Starting from the top, the ice-cream itself was quite flavourful and the texture particularly defined. However, as you work your way down, you make it to the cone. Integrety wise, the cone has a very good structure. We were provided with a waffle cone, and given the option of a tub. Unfortunately, Pan's lacked more creative cones, such as chocolate waffle or traditional waffle. In addition, the flavour of the cone was somewhat lackluster, however, the fact that we visited in the ice of January meant that the flavour may have been compromised due to the lack of customers and extended shelf time. The price per scoop was generous, at £1.50 per scoop. Overall, a pleasant experience. <br></p>
-    <img src="pans1.jpg" alt="Pans1" style="width:400px;height:480px;">
-    <img src="pans2.jpg" alt="Pans2" style="width:400px;height:480px;">
-  </article>
 
 </div>
      
 </body>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.collapsible {
+  background-color: #12949b;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #106166;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+
+    <h2><u>Reviews.</u></h2>
+
+
+
+
+<button class="collapsible">Pan's Bake shop.</button>
+<div class="content">
+   <article>
+    <center><p><u>Pan's Bake Shop</u></p></center>
+    <p>Pan's bakeshop. We tasted chocolate, vanilla and mint choc chip. Starting from the top, the ice-cream itself was quite flavourful and the texture particularly defined. However, as you work your way down, you make it to the cone. Integrety wise, the cone has a very good structure. We were provided with a waffle cone, and given the option of a tub. Unfortunately, Pan's lacked more creative cones, such as chocolate waffle or traditional waffle. In addition, the flavour of the cone was somewhat lackluster, however, the fact that we visited in the ice of January meant that the flavour may have been compromised due to the lack of customers and extended shelf time. The price per scoop was generous, at 1.50 GBP per scoop. Overall, a pleasant experience. <br></p>
+    <img src="pans1.jpg" alt="Pans1" style=width:400px;height:480px;>
+
+  </article>
+</div>
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+    </div>
 </html>
+
