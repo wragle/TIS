@@ -28,17 +28,31 @@ div.transbox p {
 
 <div>
 <h3><strong>If you wish to contact us, you can e-mail us <a href="mailto:theinsidescoop@reincarnate.com">here</a></strong><br><br><br><i>E-Mail: theinsidescoop@reincarnate.com</i></h3>
-  <divid></divid>
-  <script type="text/javascript">
-function Randomize() {
-    var images = new Array("amerino1.jpeg","amerino2.jpeg","amerino3.jpeg");
-    var imageNum = Math.floor(Math.random() * images.length);
-    document.getElementById("divid").style.backgroundImage = "url('" + images[imageNum] + "')";
-}
 
-window.onload = Randomize;
-</script>
   
+  <p>
+  <script type="text/javascript">  
+  
+<!-- 
+  
+
+  
+images = new Array(5);  
+  
+images[0] = "<a href='amerino1.jpeg'><img src='amerino1.jpeg' </a>";  
+  
+images[1] = "<a href='amerino2.jpeg'><img src='amerino2.jpeg' </a>";  
+  
+   
+index = Math.floor(Math.random() * images.length);  
+  
+document.write(images[index]);  
+  
+  
+</script>  
+  </p>
+    
+    
   </div>
 
 <div>&nbsp;</div>
